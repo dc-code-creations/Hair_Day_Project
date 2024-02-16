@@ -1,0 +1,141 @@
+/*  - background white: #edefee
+    - darker orange: #c44b3d
+    - lighter orange: #c8594a
+    - tan: #efdac8 
+    - header brown: #632A1C
+    - dark brown: #453938
+    - black: #332B2A */
+
+* {
+    /* border: 1px solid #332B2A; */
+}
+
+body {
+    background-color: #edefee;
+    font-family: 'Markazi Text', serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+header > img {
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    width: 200px;
+}
+
+nav ul {
+    list-style: none;
+    /* text-align: center; */
+    justify-content: space-around;
+    display: flex;
+}
+
+nav li {
+    display: inline-block;
+    align-self: center;
+    /* padding: 0 5%; */
+}
+
+section {
+    display: flex;
+    text-align: center;
+}
+
+section.promo-section {
+    background: url("../images/banner-3.jpeg") no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+article {
+    flex: 1;
+}
+
+article h2 {
+    height: 75px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+article img {
+    height: 200px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+}
+
+footer div {
+    display: flex;
+    flex: 1;
+    /* align-self: center; */
+    justify-content: center;
+}
+
+footer img {
+    width: 100px;
+    align-self: center;
+}
+
+button {
+    background-color: #c8594a;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    /* box-shadow: none; */
+    border: 1px solid #c44b3d;
+}
+
+button:hover {
+    background-color: #453938;
+    color: #efdac8;
+}
+
+h1.promo-heading {
+    margin-top: 0;
+    padding-top: 5%;
+    padding-bottom: 15%;
+}
+
+h1.promo-heading ~ div {
+    opacity: 0;
+}
+
+section:hover h1.promo-heading ~ div {
+    /* use an animaiton here */
+    opacity: 100;
+}
+
+h1.promo-heading ~ div p {
+    color: #efdac8;
+    /* color: #163f3b; */
+    /* color: #1C6363; */
+}
+
+div.promo-content {
+    background-color: #332B2A;
+    background-color: rgb(51, 43, 42, .75);
+    /* margin-top: 5%; */
+}
+
+div.promo-content p {
+    padding: 20px;
+}
