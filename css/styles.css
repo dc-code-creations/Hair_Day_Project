@@ -132,7 +132,6 @@ article img {
 
 article p {
     font-size: calc(1.5vw + 1.5vh);
-    padding: 5%;
 }
 
 footer {
@@ -155,7 +154,7 @@ footer img {
 button {
     background-color: #c8594a;
     padding: 10px;
-    margin: 10px;
+    margin: 0 20px 30px 20px;
     border-radius: 5px;
     /* box-shadow: none; */
     border: 1px solid #c44b3d;
@@ -195,7 +194,8 @@ div.promo-content {
 }
 
 div.promo-content p {
-    padding: 20px;
+    /* padding: 20px; */
+    padding: 30px 20px 20px;
 }
 
 @media (min-width: 870px) {
