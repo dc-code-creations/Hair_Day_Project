@@ -115,8 +115,10 @@ article h2 {
 }
 
 article img {
-    width: 200px;
-    height: 200px;
+    max-width: 150%;
+    width: calc(100%);
+    /* height: calc(100%); */
+    aspect-ratio: 1 / 1;
     overflow: hidden;
     object-fit: cover;
 }
@@ -219,6 +221,13 @@ div.promo-content p {
     section.info-section article {
         /* flex: 1; */
         margin: 20px;
+    }
+
+    article img {
+        width: 200px;
+        height: 200px;
+        /* overflow: hidden;
+        object-fit: cover; */
     }
 
     h1.promo-heading ~ div p {
