@@ -173,18 +173,37 @@ h1.promo-heading {
 
 h1.promo-heading ~ div {
     opacity: 0;
+    /* position: translate(125%, 0); */
+    transform: translate(125%, 0);
+}
+
+@keyframes banner-slide-in {
+    from {
+        opacity: 0;
+        transform: translate(125%, 0);
+    }
+    
+    to {
+        opacity: 100;
+        transform: translate(0, 0);
+    }
 }
 
 section:hover h1.promo-heading ~ div {
     /* use an animaiton here */
     opacity: 100;
+    /* animation: banner-slide-in 2s ease 0.5 1 normal; */
+
+    /* transform: translate(0, 0);
+    transition: 2s; */
+
+    animation: banner-slide-in 2s ease;
+    animation-fill-mode: forwards;
 }
 
 h1.promo-heading ~ div p {
     color: #efdac8;
     font-size: 1rem;
-    /* color: #163f3b; */
-    /* color: #1C6363; */
 }
 
 div.promo-content {
