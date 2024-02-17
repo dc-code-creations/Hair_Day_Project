@@ -109,13 +109,11 @@ section.info-section article {
 }
 
 article h2 {
-    height: 75px;
-    overflow: hidden;
-    object-fit: cover;
+    /* overflow: hidden; */
+    /* object-fit: cover; */
 }
 
 article img {
-    max-width: 150%;
     width: calc(100%);
     /* height: calc(100%); */
     aspect-ratio: 1 / 1;
@@ -210,7 +208,11 @@ div.promo-content p {
     }
     
     h2 {
-        font-size: 2rem;
+        /* height: 75px; */
+        /* font-size: 2rem; */
+        font-size: calc(1.5vw + 1.5vh);
+        align-items: center;
+        padding: 0 15px;
     }
     
     section.info-section {
@@ -224,8 +226,10 @@ div.promo-content p {
     }
 
     article img {
-        width: 200px;
-        height: 200px;
+    width: calc(100%);
+    aspect-ratio: 1 / 1;
+        /* width: 200px;
+        height: 200px; */
         /* overflow: hidden;
         object-fit: cover; */
     }
