@@ -28,11 +28,16 @@ body {
 }
 
 h1 {
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
+    font-size: calc(3vw + 3vh);
 }
 
 h2 {
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: calc(2.5vw + 2.5vh);
+    background-color: #c8594a;
+    padding: 5% 15px;
+    margin: 0;
 }
 
 header > img {
@@ -108,10 +113,12 @@ section.info-section article {
     max-width: calc(100% - 6px);
 }
 
-article h2 {
+/* article h2 { */
     /* overflow: hidden; */
     /* object-fit: cover; */
-}
+    /* font-size: calc(3vw + 3vh); */
+    /* font-size: 3rem; */
+/* } */
 
 article img {
     width: calc(100%);
@@ -119,6 +126,13 @@ article img {
     aspect-ratio: 1 / 1;
     overflow: hidden;
     object-fit: cover;
+    border-top: 3px solid #332B2A;
+    border-bottom: 3px solid #332B2A;
+}
+
+article p {
+    font-size: calc(1.5vw + 1.5vh);
+    padding: 5%;
 }
 
 footer {
@@ -203,6 +217,17 @@ div.promo-content p {
         /* font-weight: bold; */
     }
 
+    h1.promo-heading ~ div p {
+        color: #efdac8;
+        font-size: 1.4rem;
+        /* color: #163f3b; */
+        /* color: #1C6363; */
+    }
+
+    button {
+        font-size: .75rem;
+    }
+
     h1 {
         font-size: 3rem;
     }
@@ -212,7 +237,9 @@ div.promo-content p {
         /* font-size: 2rem; */
         font-size: calc(1.5vw + 1.5vh);
         align-items: center;
-        padding: 0 15px;
+        /* padding: 0 15px; */
+        padding: 7% 15px;
+        margin: 0;
     }
     
     section.info-section {
@@ -226,22 +253,17 @@ div.promo-content p {
     }
 
     article img {
-    width: calc(100%);
-    aspect-ratio: 1 / 1;
+        width: calc(100%);
+        aspect-ratio: 1 / 1;
         /* width: 200px;
         height: 200px; */
         /* overflow: hidden;
         object-fit: cover; */
+        /* border-top: 3px solid #332B2A;
+        border-bottom: 3px solid #332B2A; */
     }
 
-    h1.promo-heading ~ div p {
-        color: #efdac8;
-        font-size: 1.4rem;
-        /* color: #163f3b; */
-        /* color: #1C6363; */
-    }
-
-    button {
-        font-size: .75rem;
+    article p {
+        font-size: calc(1vw + 1vh);
     }
 }
