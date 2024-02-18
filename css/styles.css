@@ -186,6 +186,10 @@ div.promo-content p {
     padding: 30px 20px 20px;
 }
 
+article p {
+    padding: 10px 20px 20px;
+}
+
 @media (min-width: 870px) {
 
     header > img {
